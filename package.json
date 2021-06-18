@@ -1,0 +1,21 @@
+{
+  "name": "vue-carousel-comparison",
+  "version": "1.0.0",
+  "description": "Comparing Vue carousel options for performance, DX, and ADA",
+  "repository": "git@github.com:BKWLD/vue-carousel-comparison.git",
+  "author": "Bukwild <info@bukwild.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn transpile && nuxt",
+    "build": "yarn transpile && nuxt build",
+    "start": "nuxt start",
+    "generate": "yarn transpile && nuxt generate --fail-on-error --target=static",
+    "transpile": "yarn transpile:coffee",
+    "transpile:coffee": "coffee -c nuxt.config.coffee",
+    "transpile:watch": "coffee -cw nuxt.config.coffee"
+  },
+  "dependencies": {
+    "@bkwld/cloak": "BKWLD/cloak#1.x",
+    "nuxt": "^2"
+  }
+}

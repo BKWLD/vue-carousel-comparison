@@ -1,0 +1,30 @@
+<!-- Basic homepage -->
+
+<template lang='pug'>
+
+.home
+	h1 Choose from below
+	ul
+		li: smart-link(to='/vue-slick-carousel') vue-slick-carousel
+
+</template>
+
+<!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<script lang='coffee'>
+# export default
+# 	components:
+# 	props: []
+# 	data: ->
+# 	computed:
+# 	watch:
+# 	methods:
+</script>
+
+<!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<style lang='stylus' scoped>
+
+
+
+</style>
