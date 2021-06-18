@@ -4,4 +4,7 @@ boilerplate = makeBoilerplate
 	siteName: 'Vue Carousel Comparison'
 
 # Nuxt config
-module.exports = boilerplate
+module.exports = mergeConfig boilerplate,
+	plugins: [
+		'~/plugins/globals'
+	]
