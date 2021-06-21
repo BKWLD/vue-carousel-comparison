@@ -32,6 +32,8 @@ export default
 
 <style lang='stylus' scoped>
 
-
+// Make images draggable
+.vv-visual
+	pointer-events none
 
 </style>
