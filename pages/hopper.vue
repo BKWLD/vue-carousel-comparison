@@ -16,6 +16,27 @@
   )
     slide(v-for='num in 6' :key='num' :num='num')
       visual-slide(:num='num')
+
+  h2 Less slides than pagination
+  hooper(
+    :wheelControl="false"
+    itemsToShow="3"
+    :centerMode="true"
+   )
+    slide(v-for='num in 1' :key='num' :num='num')
+      visual-slide(:num='num')
+
+  h2 Variable aspect slides
+  hooper(
+    :wheelControl="false"
+    itemsToShow="3"
+    :centerMode="true"
+    :infiniteScroll="true"
+  )
+    slide(v-for='num in 6' :key='num' :num='num')
+      visual-slide(:num='num' variable-width)
+
+
 </template>
 
 <script>
