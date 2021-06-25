@@ -33,7 +33,7 @@ export default
 		# "Randomize" the aspect if variable width
 		aspect: ->
 			unless @variableWidth then 16/9
-			else (seedrandom(@num)() * 0.2 - 0.1) + 16/9
+			else (seedrandom(@num)() * 0.5 - 0.25) + 16/9
 
 		# Make the CSS width that uses the aspect for consistent heights
 		styles: ->
