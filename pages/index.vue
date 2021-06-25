@@ -7,6 +7,7 @@
 	ul
 		li: smart-link(to='/vue-slick-carousel') vue-slick-carousel
 		li: smart-link(to='/vue-carousel') vue-carousel (matt)
+		li: smart-link(to='/vue-agile-carousel') vue-agile-carousel
 
 </template>
 
