@@ -2,12 +2,22 @@
 
 <template lang='pug'>
 
-.visual-slide(:style='styles'): vue-visual(
-	transition=''
-	:lazy-load='false'
-	:image='src'
-	:aspect='aspect')
-	span Slide {{ num }}
+.visual-slide(
+	role='group'
+	aria-roledescription='slide'
+	:aria-label='`${num} of 6`'
+	:style='styles')
+
+	//- The background image
+	vue-visual(
+		transition=''
+		:lazy-load='false'
+		:image='src'
+		:aspect='aspect'
+		:alt='`Background image of slide ${num}`')
+
+		//- The text label
+		span Slide {{ num }}
 
 </template>
 
@@ -33,7 +43,7 @@ export default
 		# "Randomize" the aspect if variable width
 		aspect: ->
 			unless @variableWidth then 16/9
-			else (seedrandom(@num)() * 0.2 - 0.1) + 16/9
+			else (seedrandom(@num)() * 0.5 - 0.25) + 16/9
 
 		# Make the CSS width that uses the aspect for consistent heights
 		styles: ->
