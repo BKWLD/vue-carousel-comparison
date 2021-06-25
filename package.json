@@ -19,6 +19,7 @@
     "hooper": "^0.3.4",
     "nuxt": "^2",
     "seedrandom": "^3.0.5",
+    "vue-carousel": "^0.18.0",
     "vue-slick-carousel": "^1.0.6",
     "vue-visual": "^2.5.4"
   }
