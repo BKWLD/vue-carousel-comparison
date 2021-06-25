@@ -6,7 +6,8 @@
 	transition=''
 	:lazy-load='false'
 	:image='src'
-	:aspect='aspect')
+	:aspect='aspect'
+	:alt='`Background image of slide ${num}`')
 	span Slide {{ num }}
 
 </template>
