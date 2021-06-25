@@ -1,5 +1,9 @@
 <template lang='pug'>
-  hooper
+.page
+  h1 hopper
+
+  h2 Full width slides
+  hooper(:wheelControl="false")
     slide(v-for='num in 6' :key='num' :num='num')
       visual-slide(:num='num')
 </template>
@@ -16,3 +20,10 @@ export default {
   }
 }
 </script>
+
+<style lang='stylus' scoped>
+.hooper {
+  height: auto;
+}
+</style>
+
