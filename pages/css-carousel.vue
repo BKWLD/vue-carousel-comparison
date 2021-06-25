@@ -68,14 +68,14 @@ export default
 
 	data: -> currentIndex: 1
 
-	mounted: ->
-		options =
-			root: @$refs.fullSlide
-			rootMargin: '0px'
-			threshold: 0.5
-		observer = new IntersectionObserver @checkSlide, options
-		for slide, i in @$refs.fullSlides
-			observer.observe slide
+	# mounted: ->
+	# 	options =
+	# 		root: @$refs.fullSlide
+	# 		rootMargin: '0px'
+	# 		threshold: 0.5
+	# 	observer = new IntersectionObserver @checkSlide, options
+	# 	for slide, i in @$refs.fullSlides
+	# 		observer.observe slide
 
 	methods:
 		checkSlide: (entries, observer) ->
@@ -89,7 +89,8 @@ export default
 		goPrev: (index) ->
 			if @currentIndex > 0 then @currentIndex--
 
-		jumpToSlide: (i) -> @currentIndex = i
+		jumpToSlide: (i) -> 
+			@currentIndex = i
 	
 	watch:
 	
@@ -180,5 +181,8 @@ export default
 	flex-shrink 0
 	-webkit-overflow-scrolling touch
 	scroll-snap-align start
+
+	.variable-width &
+		width auto
 
 </style>
