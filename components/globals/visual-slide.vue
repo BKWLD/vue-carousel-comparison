@@ -2,13 +2,22 @@
 
 <template lang='pug'>
 
-.visual-slide(:style='styles'): vue-visual(
-	transition=''
-	:lazy-load='false'
-	:image='src'
-	:aspect='aspect'
-	:alt='`Background image of slide ${num}`')
-	span Slide {{ num }}
+.visual-slide(
+	role='group'
+	aria-roledescription='slide'
+	:aria-label='`${num} of 6`'
+	:style='styles')
+
+	//- The background image
+	vue-visual(
+		transition=''
+		:lazy-load='false'
+		:image='src'
+		:aspect='aspect'
+		:alt='`Background image of slide ${num}`')
+
+		//- The text label
+		span Slide {{ num }}
 
 </template>
 
