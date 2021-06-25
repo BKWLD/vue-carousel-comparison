@@ -10,7 +10,7 @@
   h2 Multiple slides per viewport with peeking
   hooper(
     :wheelControl="false"
-    itemsToShow="3"
+    :itemsToShow="3"
     :centerMode="true"
     :infiniteScroll="true"
   )
@@ -20,7 +20,7 @@
   h2 Less slides than pagination
   hooper(
     :wheelControl="false"
-    itemsToShow="3"
+    :itemsToShow="3"
     :centerMode="true"
    )
     slide(v-for='num in 1' :key='num' :num='num')
@@ -29,7 +29,7 @@
   h2 Variable aspect slides
   hooper(
     :wheelControl="false"
-    itemsToShow="3"
+    :itemsToShow="3"
     :centerMode="true"
     :infiniteScroll="true"
   )
