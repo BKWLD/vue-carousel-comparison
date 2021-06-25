@@ -1,28 +1,29 @@
-<!-- vue-slick-carousel carousel demo -->
+<!-- Render a slide that doesn't lazy load -->
 
 <template lang='pug'>
 
-.page
-	h1 vue-slick-carousel
-
-	h2 Basic
-	vue-slick-carousel(arrows dots)
-
-		//- This needed to be nested, not ideal
-		div(v-for='num in 6' :key='num' :num='num')
-			visual-slide(:num='num')
+vue-visual(
+	transition=''
+	:lazy-load='false'
+	:image='src'
+	:aspect='16/9')
 
 </template>
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script lang='coffee'>
-import VueSlickCarousel from 'vue-slick-carousel'
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-
 export default
-	components: { VueSlickCarousel }
+
+	props:
+
+		# The slide number
+		num: Number
+
+	computed:
+
+		# Make the src reference
+		src: -> "/imgs/16x9/#{@num}.png"
 
 </script>
 
@@ -30,8 +31,6 @@ export default
 
 <style lang='stylus' scoped>
 
-// Make images draggable
-.vv-visual
-	pointer-events none
+
 
 </style>
