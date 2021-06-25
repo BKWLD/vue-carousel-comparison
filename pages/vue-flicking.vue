@@ -50,12 +50,7 @@
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script lang='coffee'>
-import { Flicking } from "@egjs/vue-flicking"
 import "@egjs/vue-flicking/dist/flicking.css";
-
-export default
-	components:
-		Flicking: Flicking
 
 
 
@@ -71,12 +66,5 @@ export default
 
 .slide-80
 	width 30%
-
->>> img
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
 
 </style>

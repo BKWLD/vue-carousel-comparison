@@ -5190,11 +5190,6 @@ nuxt-coffeescript-module@^2.0.0:
     coffee-loader "^0.9"
     coffeescript "^2"
 
-nuxt-page-transition-and-anchor-handler@^3.1.2:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/nuxt-page-transition-and-anchor-handler/-/nuxt-page-transition-and-anchor-handler-3.2.0.tgz#0cf24e31a99a69b4d3059766d53f1255a60b212b"
-  integrity sha512-kdVbB4BbKfGWWjVcTVZqAT3h7WFgY3df+DR0l5d5nRaO6dUKazsd+4UREKjmQ/v75e7hPdE9rXLQIGNF3cjPqQ==
-
 nuxt-polyfill@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/nuxt-polyfill/-/nuxt-polyfill-1.0.3.tgz#b93d970153d6139a9fc0ea085480212adad13889"
