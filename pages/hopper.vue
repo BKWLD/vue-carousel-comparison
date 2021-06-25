@@ -6,6 +6,16 @@
   hooper(:wheelControl="false")
     slide(v-for='num in 6' :key='num' :num='num')
       visual-slide(:num='num')
+
+  h2 Multiple slides per viewport with peeking
+  hooper(
+    :wheelControl="false"
+    itemsToShow="3"
+    :centerMode="true"
+    :infiniteScroll="true"
+  )
+    slide(v-for='num in 6' :key='num' :num='num')
+      visual-slide(:num='num')
 </template>
 
 <script>
