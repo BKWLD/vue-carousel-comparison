@@ -17,6 +17,7 @@
   "dependencies": {
     "@bkwld/cloak": "BKWLD/cloak#1.x",
     "nuxt": "^2",
+    "seedrandom": "^3.0.5",
     "vue-slick-carousel": "^1.0.6",
     "vue-visual": "^2.5.4"
   }
