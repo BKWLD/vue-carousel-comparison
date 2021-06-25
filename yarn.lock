@@ -903,9 +903,9 @@
     "@babel/helper-validator-identifier" "^7.14.5"
     to-fast-properties "^2.0.0"
 
-"@bkwld/cloak@BKWLD/cloak#1.x":
+"@bkwld/cloak@https://github.com/BKWLD/cloak#f340d8d":
   version "0.3.0"
-  resolved "https://codeload.github.com/BKWLD/cloak/tar.gz/a3bf6dc805e1a395f9844dcd1d2f67a707206472"
+  resolved "https://github.com/BKWLD/cloak#f340d8d64506a6f2131236e8f3878876ac19f7d2"
   dependencies:
     "@nuxtjs/axios" "^5.0.0"
     "@nuxtjs/gtm" "^2.0.0"
