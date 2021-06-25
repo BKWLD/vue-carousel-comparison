@@ -6,6 +6,7 @@
 	h1 Choose from below
 	ul
 		li: smart-link(to='/vue-slick-carousel') vue-slick-carousel
+		li: smart-link(to='/hopper') hopper
 
 </template>
 

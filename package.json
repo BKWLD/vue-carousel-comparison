@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@bkwld/cloak": "https://github.com/BKWLD/cloak#f340d8d",
+    "hooper": "^0.3.4",
     "nuxt": "^2",
     "seedrandom": "^3.0.5",
     "vue-slick-carousel": "^1.0.6",
