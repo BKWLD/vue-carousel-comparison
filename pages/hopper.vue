@@ -2,8 +2,6 @@
   hooper
     slide(v-for='num in 6' :key='num' :num='num')
       visual-slide(:num='num')
-
-
 </template>
 
 <script>
