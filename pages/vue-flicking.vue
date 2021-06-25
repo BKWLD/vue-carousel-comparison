@@ -49,18 +49,6 @@
 
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<script lang='coffee'>
-import { Flicking } from "@egjs/vue-flicking"
-import "@egjs/vue-flicking/dist/flicking.css";
-
-export default
-	components:
-		Flicking: Flicking
-
-
-
-</script>
-
 <!-- ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <style lang='stylus' scoped>
