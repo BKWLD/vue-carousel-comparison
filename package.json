@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@bkwld/cloak": "https://github.com/BKWLD/cloak#f340d8d",
+    "@egjs/vue-flicking": "^4.1.0",
     "nuxt": "^2",
     "seedrandom": "^3.0.5",
     "vue-slick-carousel": "^1.0.6",

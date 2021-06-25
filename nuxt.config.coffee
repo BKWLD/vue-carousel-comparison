@@ -8,3 +8,8 @@ module.exports = mergeConfig boilerplate,
 	plugins: [
 		'~/plugins/globals'
 	]
+	build:
+		loaders:
+			vue:
+				compilerOptions:
+					preserveWhitespace: false

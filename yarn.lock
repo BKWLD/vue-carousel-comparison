@@ -941,6 +941,60 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@egjs/agent@^2.2.1":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@egjs/agent/-/agent-2.3.0.tgz#5a18150ce46a2ba1d237a847db44b0a234bd96f0"
+  integrity sha512-ENhwkOW6rnYW8IuXJwvECIAzj7nMxq+ctB8uCJ+mKnoKK8tGiv3YXtN6nuaOov2YmXdRdwafSz9rhgRNXswX/A==
+
+"@egjs/axes@^2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@egjs/axes/-/axes-2.8.0.tgz#b038378ad0a085b3b4a5218dd8e7db396898212c"
+  integrity sha512-WPMIM/ExZBS8guD3oeNr6YGDn2xSnj0YUZHWvY/NWvTQIs7A2O7WxJivYgzcg7r2q0RYtzrdpHn+982iaKCLSw==
+  dependencies:
+    "@egjs/agent" "^2.2.1"
+    "@egjs/component" "^2.2.2"
+    "@egjs/hammerjs" "^2.0.15"
+
+"@egjs/component@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@egjs/component/-/component-2.2.2.tgz#b8208ea4ca05f6562a51d58f1e6f9979aad8a9d9"
+  integrity sha512-2m6nu6/Mbs6VnoT4IHFGUBX6V82Zp01zDmlWpIJ3fMatHpe7BB1qUYFgMmSWGY0uOvOl4plvflwbCRUAGMfwWQ==
+
+"@egjs/component@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@egjs/component/-/component-3.0.1.tgz#4bf122b5f81fd01126646c63f4fd7aa200a5a057"
+  integrity sha512-Hus9GMXOVfHBzyumyeRL1TkN60LhGen+e9FpqXqbS9jA9hDYEE1AH3ulahbBGhRdMs4uXYl3hRnB5kGZRb9n7Q==
+
+"@egjs/flicking@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@egjs/flicking/-/flicking-4.1.0.tgz#3fcacdd938c96b9d796ea1ff90cb454b1a1045d1"
+  integrity sha512-GsqUQwztXeAL3lq6Q6DrgL2GF5CCtwID6Ofuw3amOuBA2p5OlNSsl3kuU/dOoFaNR7iXPZ+JPc6kd+p6jKVFtg==
+  dependencies:
+    "@egjs/axes" "^2.8.0"
+    "@egjs/component" "^3.0.1"
+    "@egjs/list-differ" "^1.0.0"
+
+"@egjs/hammerjs@^2.0.15":
+  version "2.0.17"
+  resolved "https://registry.yarnpkg.com/@egjs/hammerjs/-/hammerjs-2.0.17.tgz#5dc02af75a6a06e4c2db0202cae38c9263895124"
+  integrity sha512-XQsZgjm2EcVUiZQf11UBJQfmZeEmOW8DpI1gsFeln6w0ae0ii4dMQEQ0kjl6DspdWX1aGY1/loyXnP0JS06e/A==
+  dependencies:
+    "@types/hammerjs" "^2.0.36"
+
+"@egjs/list-differ@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@egjs/list-differ/-/list-differ-1.0.0.tgz#2277aff52e3e4bd9318d5c30ffc3ba3b6216f05e"
+  integrity sha512-HsbMKc0ZAQH+EUeCmI/2PvTYSybmkaWwakU8QGDYYgMVIg9BQ5sM0A0Nnombjxo2+JzXHxmH+jw//yGX+y6GYw==
+
+"@egjs/vue-flicking@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@egjs/vue-flicking/-/vue-flicking-4.1.0.tgz#3cf6dc40db0670e614c6656637c602f56d4290b4"
+  integrity sha512-yhL3jmNtf7VnjjmSTHjl3NnyDOFldlHGEHKxMSmL/xkCk/epkBiE95oJXajz4HmZ9uaVc0PU4Q7ZepM1PFfZrw==
+  dependencies:
+    "@egjs/flicking" "^4.1.0"
+    "@egjs/list-differ" "^1.0.0"
+    vue-property-decorator "^8.1.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1501,6 +1555,11 @@
   integrity sha512-xH2e58elpj1X4ynnKp9qSnWlsRTIs6n3tgLGNfwAGHwePw0mulHQllV34n0T25uYSu1k0hRKkWXF890B1yS47w==
   dependencies:
     "@types/babel-types" "*"
+
+"@types/hammerjs@^2.0.36":
+  version "2.0.39"
+  resolved "https://registry.yarnpkg.com/@types/hammerjs/-/hammerjs-2.0.39.tgz#4be64bbacf3813c79c0dab895c6b0fdc7d5e513f"
+  integrity sha512-lYR2Y/tV2ujpk/WyUc7S0VLI0a9hrtVIN9EwnrNo5oSEJI2cK2/XrgwOQmXLL3eTulOESvh9qP6si9+DWM9cOA==
 
 "@types/html-minifier-terser@^5.0.0":
   version "5.1.1"
@@ -5861,6 +5920,11 @@ nuxt-coffeescript-module@^2.0.0:
     coffee-loader "^0.9"
     coffeescript "^2"
 
+nuxt-page-transition-and-anchor-handler@^3.1.2:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/nuxt-page-transition-and-anchor-handler/-/nuxt-page-transition-and-anchor-handler-3.2.0.tgz#0cf24e31a99a69b4d3059766d53f1255a60b212b"
+  integrity sha512-kdVbB4BbKfGWWjVcTVZqAT3h7WFgY3df+DR0l5d5nRaO6dUKazsd+4UREKjmQ/v75e7hPdE9rXLQIGNF3cjPqQ==
+
 nuxt-polyfill@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/nuxt-polyfill/-/nuxt-polyfill-1.0.3.tgz#b93d970153d6139a9fc0ea085480212adad13889"
@@ -8675,6 +8739,11 @@ void-elements@^2.0.1:
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
   integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
+vue-class-component@^7.1.0:
+  version "7.2.6"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-7.2.6.tgz#8471e037b8e4762f5a464686e19e5afc708502e4"
+  integrity sha512-+eaQXVrAm/LldalI272PpDe3+i4mPis0ORiMYxF6Ae4hyuCh15W8Idet7wPUEs4N4YptgFHGys4UrgNQOMyO6w==
+
 vue-client-only@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.1.0.tgz#1a67a47b8ecacfa86d75830173fffee3bf8a4ee3"
@@ -8707,6 +8776,13 @@ vue-no-ssr@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
   integrity sha512-ZMjqRpWabMPqPc7gIrG0Nw6vRf1+itwf0Itft7LbMXs2g3Zs/NFmevjZGN1x7K3Q95GmIjWbQZTVerxiBxI+0g==
+
+vue-property-decorator@^8.1.0:
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/vue-property-decorator/-/vue-property-decorator-8.5.1.tgz#571a91cf8d2b507f537d79bf8275af3184572fff"
+  integrity sha512-O6OUN2OMsYTGPvgFtXeBU3jPnX5ffQ9V4I1WfxFQ6dqz6cOUbR3Usou7kgFpfiXDvV7dJQSFcJ5yUPgOtPPm1Q==
+  dependencies:
+    vue-class-component "^7.1.0"
 
 vue-router@^3.5.1:
   version "3.5.1"
